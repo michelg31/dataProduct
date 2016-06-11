@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Magic The Gathering Explorer</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Magic The Gathering Explorer">
+  <meta name="author" content="michelg31">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Magic The Gathering Explorer</h1>
+    <h2>(Developing data product Project Course)</h2>
+    <p>michelg31<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>What is magic the gathering ?</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Magic the Gathering is a card game that puts together best of chess and poker.</p>
+
+<p>Every quarter, there is between 150 to 300 new cards with new gameplay. Cards are grouped by expansions and blocks (2 to 3 expansions).</p>
+
+<p>One way to play is to only use the two latests block (format standard) and since cards change 6 months, winning strategy are never the same.</p>
+
+<p>Since Magic is more than 20 years old, it is very useful to compare new expansions with older ones to find potential wining strategies, and &quot;Magic The Gathering Explorer&quot; aims to help player to do so.</p>
+
+<p>Number of magic expansions :</p>
+
+<pre><code>## [1] 193
+</code></pre>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id1" style="background:;">
+  <hgroup>
+    <h2>Application introduction</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>There is 3 tab panels</p>
+
+<p><img src="assets/img/panel.png" alt="Figure 1-1" title="Figure 1-1"></p>
+
+<ul>
+<li><p>Sets selection :
+This panel allows to select one or more expansions with checkboxes. Expansions can be selected/unselected by clicking on blocks</p></li>
+<li><p>Sets comparison :
+This is the main part of the application. This panel shows boxplots of one characteristics for every expansions. Results can be filtered by cards types or color.</p></li>
+<li><p>Instructions : 
+This panel just gives a small set of instructions on how to use the application</p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id2" style="background:;">
+  <hgroup>
+    <h2>Sets comparison graphic</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Graphic consist in boxplots with box around average being 2nd and 3rd quartile.</p>
+
+<p>Example :
+<img src="assets/img/Boxplot.png" alt="Figure 2-1" title="Figure 2-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id3" style="background:;">
+  <hgroup>
+    <h2>Options</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/char.png" alt="Figure 3-1" title="Figure 3-1">
+<img src="assets/img/types.png" alt="Figure 3-2" title="Figure 3-2">
+<img src="assets/img/colors.png" alt="Figure 3-3" title="Figure 3-3"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id4" style="background:;">
+  <hgroup>
+    <h2>Expansions, Core sets and blocks</h2>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/img/set_selection.png" alt="Figure 4-1" title="Figure 4-1"></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='What is magic the gathering ?'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Application introduction'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Sets comparison graphic'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Options'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Expansions, Core sets and blocks'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
